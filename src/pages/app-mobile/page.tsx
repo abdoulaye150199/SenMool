@@ -3,7 +3,6 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import { fishermen, alerts, appMobileMenu, todayHourlyWeather, fiveDayForecast, meshNodes } from '@/mocks/senmool-v2';
 import { useNotifications } from '@/hooks/useNotifications';
 import ToastContainer from '@/components/base/Toast';
-import PrototypeBanner from '@/components/base/PrototypeBanner';
 
 function formatTime(d: string) {
   return new Date(d).toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' });
@@ -102,9 +101,6 @@ export default function AppMobilePage() {
 
   return (
     <div className="min-h-screen bg-ocean-50 flex flex-col items-center py-8 md:py-12">
-      <div className="w-full max-w-[420px] px-4 mb-4">
-        <PrototypeBanner />
-      </div>
       <ToastContainer toasts={toasts} onRemove={removeToast} />
 
       <div className="text-center mb-6">

@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { fishermen, alerts, stats, riskZones, recentTrips, meshNodes, meshStats, fiveDayForecast, todayHourlyWeather } from '@/mocks/senmool-v2';
 import { useInView } from '@/hooks/useInView';
-import PrototypeBanner from '@/components/base/PrototypeBanner';
 import NotificationBadge from '@/components/base/NotificationBadge';
 import LiveCameraFeed, { CAMERAS } from '@/components/feature/LiveCameraFeed';
 
@@ -119,7 +118,6 @@ export default function DashboardPage() {
 
   return (
     <div className="min-h-screen bg-ocean-50">
-      <PrototypeBanner />
       <div className="bg-ocean-900 text-white">
         <div className="w-full px-6 md:px-10 py-4 flex flex-col md:flex-row md:items-center justify-between gap-3">
           <div className="flex items-center gap-3">

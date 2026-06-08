@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useInView } from '@/hooks/useInView';
-import PrototypeBanner from '@/components/base/PrototypeBanner';
 import { caseStudies, testimonials, impactMetrics, economicBenefits, timelineEvents, beforeAfterData } from '@/mocks/impact';
 
 function AnimatedSection({ children, className = '' }: { children: React.ReactNode; className?: string }) {
@@ -46,7 +45,6 @@ export default function ImpactPage() {
 
   return (
     <div className="min-h-screen bg-ocean-50">
-      <PrototypeBanner />
       {/* HERO */}
       <section className="relative bg-ocean-900 text-white py-16 md:py-24">
         <div className="absolute inset-0 bg-gradient-to-b from-ocean-900/80 via-ocean-800/60 to-ocean-900/90" />

@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import { meshNodes } from '@/mocks/senmool-v2';
 import { useNotifications } from '@/hooks/useNotifications';
 import ToastContainer from '@/components/base/Toast';
-import PrototypeBanner from '@/components/base/PrototypeBanner';
 
 interface BraceletData {
   heartRate: number;
@@ -163,7 +162,6 @@ export default function BraceletPage() {
 
   return (
     <div className="min-h-screen bg-ocean-50">
-      <PrototypeBanner />
       <ToastContainer toasts={toasts} onRemove={removeToast} />
 
       <div className="w-full px-6 md:px-10 py-20 md:py-24">
